@@ -5,7 +5,7 @@ public class TestString {
 
     public static void main(String[] args) {
 
-        new TestString().startup();
+        System.out.println(new TestString().getTrangle());
     }
 
     public void testString(){
@@ -38,6 +38,23 @@ public class TestString {
         builder.toString();
         long endTime = System.currentTimeMillis();
         System.out.print("StringBuilder : " + (endTime - beginTime) + "\t");
+    }
+
+    public int getTrangle(){
+
+        int count = 0;
+        for(int a=100;a<=999;a++){
+            int i= a%10;
+            int j = (a%100)/10;
+            int k = a/100;
+            System.out.println(k+" " + j + " " + i);
+            if(i>0&&j>0&&k>0 &&i+j>k && i+k>j && k+j>i && Math.abs(i-j)<k && Math.abs(i-k)<j && Math.abs(j-k)<i){
+                if(i==j || i==k || k==j){
+                  count++;
+                }
+            }
+        }
+      return count;
     }
 
     public void startup(){
