@@ -6,6 +6,7 @@ public class LinkedListUtils{
         System.out.print(head.val+" ");
         head= head.next;
     }
+    System.out.println();
   }
 
 }
