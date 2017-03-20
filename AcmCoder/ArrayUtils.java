@@ -1,7 +1,7 @@
 
 public class ArrayUtils {
 
-    public static void printArray(int[] array) {
+    public static void printArray(char[] array) {
         System.out.print("{");
         for (int i = 0; i < array.length; i++) {
             System.out.print(array[i]);
@@ -18,7 +18,7 @@ public class ArrayUtils {
         array[index2] = temp;
     }
 
-    public static void print2Array(int[][] a){
+    public static void print2Array(char[][] a){
         for (int i = 0; i < a.length; i++) {
             for(int j=0;j<a.length;j++){
                 System.out.print(a[i][j]+"  ");
