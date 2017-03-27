@@ -8,3 +8,4 @@
 4. **_Netease_** ---网易笔试编程题
 5. **_nio_** ---java nio 测试
 6. **_Offer_** ---剑指Offer编程练习
+由于此项目结构混乱，转战至JavaExercise项目下。
